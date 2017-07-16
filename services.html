@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Wonderland Weather</title>
+
+<link href='http://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quantico:400,700' rel='stylesheet' type='text/css'>
+<link href="css/styles.css" rel="stylesheet" type="text/css"/>
+<link href="css/services.css" rel="stylesheet" type="text/css"/>
+<link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	$('.traditional .iframe').fancybox({
+		width: 1200,
+		height: 420,
+		overlayColor: '#000000',
+		overlayOpacity: .65,
+		padding: '0px',
+		cyclic: true,
+		easingIn: 'easeInSine',
+		easingOut: 'easeOutSine',
+	}); // end fancybox
+	$('.ecological .iframe').fancybox({
+		width: 1200,
+		height: 800,
+		overlayColor: '#000000',
+		overlayOpacity: .65,
+		padding: '0px',
+	}); // end fancybox
+	$('.events .iframe').fancybox({
+		width: 1000,
+		height: 380,
+		overlayColor: '#000000',
+		overlayOpacity: .65,
+		padding: '0px',
+		cyclic: true,
+	}); // end fancybox
+	
+}); // end ready
+</script>
+
+</head>
+<body class="services">
+
+<div class="leftcolumn">
+<figure>
+	<img class="logo" src="images/sunsnow.png" alt="Wonderland Weather" width="120" height"120">
+	<figcaption>Wonderland Weather</figcaption>
+</figure>
+	<ul class="mainNav">
+		<li><a href="index.html" class="homeLink">Home</a></li>
+		<li><a href="services.html" class="servicesLink">Services</a></li>
+		<li><a href="howitworks.html" class="howLink">How It Works</a></li>
+		<li><a href="order.html" class="orderLink">Order</a></li>
+	</ul>
+</div>
+
+<div class="rightcolumn">
+
+<div class="header">
+ <p class="name">Services Available</p>
+</div>
+
+<h4>Terminological guidelines to help you communicate your needs effectively</h4>
+
+<nav>
+	<ul>
+		<li><a href="services/spring.html" class="iframe" rel="traditional">Traditional Seasons</a>
+			<ul class="traditional">
+				<li><a href="services/spring.html" class="iframe" rel="traditional">Spring</a></li>
+				<li><a href="services/summer.html" class="iframe" rel="traditional">Summer</a></li>
+				<li><a href="services/fall.html" class="iframe" rel="traditional">Fall</a></li>
+				<li><a href="services/winter.html" class="iframe" rel="traditional">Winter</a></li>
+			</ul>
+		</li>
+		<li class="ecological"><a href="services/ecological.html"class="iframe">Ecological Seasons</a>
+		</li>
+		<li><a href="services/thunderstorm.html" class="iframe" rel="events">Weather Events</a>
+			<ul class="events">
+				<li><a href="services/thunderstorm.html" class="iframe" rel="events">Thunderstorm</a></li>
+				<li><a href="services/hailstorm.html" class="iframe" rel="events">Hail Storm</a></li>
+				<li><a href="services/tornado.html" class="iframe" rel="events">Tornado</a>
+				<li><a href="services/hurricane.html" class="iframe" rel="events">Hurricane</a></li>
+				<li><a href="services/severefog.html" class="iframe" rel="events">Severe Fog</a></li>
+				<li><a href="services/blizzard.html" class="iframe" rel="events">Blizzard</a>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<div class="content">
+<img src="images/four_seasons.jpg" alt="Four Seasons" width="450" height="450">
+</div>
+
+</div>
+<div class="footer">
+&copy 2014 Wonderland Weather: A Member of the Brolly Group, All Right Reserved.   |   For support contact <a href="mailto:email@email.com?Subject=Support" target="_top">admin support</a>
+</div>
+</body>
+</html>
